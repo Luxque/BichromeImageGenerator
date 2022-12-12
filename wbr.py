@@ -13,7 +13,7 @@ pixelsOut = imageOut.load()
 
 for i in range(imageIn.size[0]):
     for j in range(imageIn.size[1]):
-        detect = pixelsIn[i,j][0] > 200 and pixelsIn[i,j][1] > 200 and pixelsIn[i,j][2]
+        detect = pixelsIn[i,j][0] > 200 and pixelsIn[i,j][1] > 200 and pixelsIn[i,j][2] > 200
 
         if detect: 
             pixelsOut[i, j] = (0, 0, 0, 0)
